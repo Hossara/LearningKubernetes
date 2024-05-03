@@ -25,3 +25,19 @@ To see all of your namespaces, type:
 ```bash
 kubectl get namespaces
 ```
+
+### Kubernetes service
+A Kubernetes Service is an abstraction layer which defines a logical set of Pods and enables external `traffic exposure, load balancing and service discovery` for those Pods.
+
+To see all of your services, type:
+```bash
+kubectl get services -A
+```
+
+### Kubernetes pods
+A Kubernetes pod is a collection of one or more Linux® containers, and is the smallest unit of a Kubernetes application. Any given pod can be composed of multiple, tightly coupled containers (an advanced use case) or just a single container (a more common use case).
+
+To see all of your pods, type:
+```bash
+kubectl get pods -A
+```
