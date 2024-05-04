@@ -5,7 +5,7 @@ A Kubernetes cluster is a set of nodes that run containerized applications.
 
 To see your cluster info, type:
 ```bash
-kubectl cluster-info
+kubectl -- cluster-info
 ```
 
 ### Kubernetes node
@@ -13,7 +13,7 @@ A Node is a `worker machine` in Kubernetes and may be either a virtual or a phys
 
 To see all of your nodes, type:
 ```bash
-kubectl get nodes
+kubectl -- get nodes
 ```
 
 ### Kubernetes namespace
@@ -23,7 +23,7 @@ Namespaces are a way to organize clusters into virtual sub-clusters. they can be
 
 To see all of your namespaces, type:
 ```bash
-kubectl get namespaces
+kubectl -- get namespaces
 ```
 
 ### Kubernetes service
@@ -31,7 +31,7 @@ A Kubernetes Service is an abstraction layer which defines a logical set of Pods
 
 To see all of your services, type:
 ```bash
-kubectl get services -A
+kubectl -- get services -A
 ```
 
 ### Kubernetes pods
@@ -39,5 +39,5 @@ A Kubernetes pod is a collection of one or more Linux® containers, and is the s
 
 To see all of your pods, type:
 ```bash
-kubectl get pods -A
+kubectl -- get pods -A
 ```
